@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+    <link rel="stylesheet" href="book.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="display-data.html">
+    <link rel="stylesheet" href="css/css/styles.css"> <!-- Adjusted path -->
+    <form id="booking-form" method="POST" action="http://localhost:3000/submit">
+
+
+</head>
+<body>
+    <h2 class="heading-with-line">Discover Tables Number and Images Below</h2>
+
+    <!-- Booking Section -->
+    <section id="booking-section">
+        <h2>Book a Table</h2>
+        <form id="booking-form">
+            <!-- Form fields -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="e.g., +1234567890">
+
+            <label for="table-number">Table Number:</label>
+            <select id="table-number" name="table-number" required>
+                <!-- Table options -->
+                <option value="" disabled selected>Select a table</option>
+                <option value="1">Table 1</option>
+                <option value="2">Table 2</option>
+                <option value="3">Table 3</option>
+                <option value="4">Table 4</option>
+                <!-- Add more tables as needed -->
+            </select>
+
+            <label for="booking-date">Booking Date:</label>
+            <input type="date" id="booking-date" name="booking-date" required>
+
+            <label for="booking-time">Booking Time:</label>
+            <input type="time" id="booking-time" name="booking-time" required>
+
+            <button type="submit">Submit</button>
+            <form id="booking-form" method="POST" action="http://127.0.0.1:5000/submit"></form>
+        </form>
+    </section>
+
+    <!-- Reservation Confirmation Section -->
+    <section id="reservation-confirmation" style="display:none;">
+        <h2>Reservation Confirmed!</h2>
+        <p>Your reservation details:</p>
+        <p id="reservation-details"></p>
+
+        <!-- Images for each table (initially hidden) -->
+        <div id="table-images">
+            <img id="image-1" src="" alt="Table 1" style="display:none;">
+            <img id="image-2" src="example.jpg" alt="Table 2" style="display:none;">
+            <img id="image-3" src="example.jpg" alt="Table 3" style="display:none;">
+            <img id="image-4" src="example.jpg" alt="Table 4" style="display:none;">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- Image Animation Section -->
+    <section id="image-animation">
+        <h2>Discover More</h2>
+        <div class="image-container">
+            <img src="./img/83e57192-ab2e-4125-b47b-6a1eaedb135c.jpg">
+        </div>
+    </section>
+
+    <script src="book.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

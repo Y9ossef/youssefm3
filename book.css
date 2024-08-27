@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    color: #2c3e50; /* Matching the Navbar color */
+    text-align: center;
+}
+
+.heading-with-line {
+    font-size: 1.5em; /* Adjust font size as needed */
+    color: #2c3e50; /* Heading text color */
+    margin-bottom: 10px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+    position: relative;
+    display: inline-block;
+}
+
+.heading-with-line::after {
+    content: "";
+    display: block;
+    width: 50%; /* Adjust width of the line */
+    height: 1.5px; /* Thickness of the line */
+    background-color: #2c3e50; /* Line color */
+    margin: 5px auto 0; /* Space between heading and line */
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="tel"] {
+    /* Styling for phone number input */
+    padding-left: 12px;
+}
+
+button {
+    background-color: #ff4500;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e03e00;
+}
+
+.payment-options button {
+    background-color: #2c3e50;
+    margin: 10px;
+}
+
+.payment-options button:hover {
+    background-color: #1a242f;
+}
+
+/* Reservation Confirmation Section */
+#reservation-confirmation {
+    margin-top: 50px;
+}
+
+#reservation-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Image Animation Section */
+#image-animation {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.image-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.6s ease-in-out, filter 0.6s ease-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.2); /* Adjust scale factor to make the image larger */
+    filter: brightness(1.2);
+}
+/* Alert Box Styling */
+.alert {
+    padding: 15px;
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Additional Styling for Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
